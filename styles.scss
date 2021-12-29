@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0; margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    outline: none;
+}
+body{
+    background: #F0F0F0;
+}
+.container {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    form {
+        max-width: 500px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        input[type="text"]{
+            border: 2px solid #333;
+            padding: 15px 20px;
+            border-radius: 50px;
+            max-width: 350px;
+            width: 100%;
+            margin-bottom: 20px;
+            font-size: 18px;
+            &:focus{
+                border:2px solid crimson;
+            }
+        }
+        button#btnSearch{
+            font-size: 16px;
+            color: #FFF;
+            background-color: crimson;
+            cursor: pointer;
+            border-radius: 50px;
+            border: none;
+            padding: 10px 30px;
+            transform: scale(1);
+            &:hover{
+                background-color: #333;
+                letter-spacing: .5px;
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    .infoBox{
+        width: 400px;
+        background: #FFF;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 1px 4px #d3d3d3;
+        z-index: 1000;
+        margin-bottom: 20px;
+        padding: 10px 0 0;
+        display: none;
+        img{
+            max-width: 200px;
+        }
+        h3{
+            font-weight: 500;
+            font-size: 28px;
+        }
+        h4{
+            color: #999;
+            font-weight: 500;
+        }
+        .row{
+            display: flex;
+            margin-top: 20px;
+            border-top: 1px solid rgb(228, 228, 228);
+            padding: 10px;
+            .col{
+                flex: 1 1 33.33%;
+                display: flex;
+                flex-direction: column;
+                font-size: 14px;
+                span{
+                    color: #999;
+                }
+            }
+        }
+    }
+}
+
+
+
